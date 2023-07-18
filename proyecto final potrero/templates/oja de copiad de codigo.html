@@ -1,0 +1,27 @@
+@app.route('/put')
+def about():
+    return render_template("put.html")
+
+@app.route('/post')
+def about():
+    return render_template("post.html")
+
+@app.route('/delet')
+def about():
+    return render_template("delet.html")
+
+
+
+
+
+
+    <h1> post  </h1>
+<a class="nav-link active" aria-current="page" href="{{url_for ('put')}}">PUT</a>
+<br><br><br><br><br><br>
+<h1> put  </h1>
+<a class="nav-link active" aria-current="page" href="{{url_for ('post')}}">POST</a>
+<br><br><br><br><br><br>
+<h1> delet  </h1>
+
+<a class="nav-link active" aria-current="page" href="{{url_for ('delet')}}">DELET</a>
+
